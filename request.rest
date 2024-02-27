@@ -1,0 +1,17 @@
+//requisições
+
+POST /api/services HTTP/1.1
+Host: localhost:3000
+Content-Type: application/json
+
+{
+    "name": "Algum serviço",
+    "description": "Alguma descrição",
+    "price": 1400,
+    "image": "String"
+}
+
+// ### = separação
+
+### 
+GET http://localhost:3000/api/services

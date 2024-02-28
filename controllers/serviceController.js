@@ -31,6 +31,18 @@ const serviceController = {
       console.log(error);
     }
   },
+  get: async (req, res) => {
+    try {
+      // id => URL === GET
+      const id = req.params.id;
+      //resgatando serviço do banco
+      const service = await ServiceModel.findById(id);
+
+      res.json(service);
+    } catch (error) {
+      console.log(error);
+    }
+  },
 };
 
 //exportando objeto

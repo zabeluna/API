@@ -7,7 +7,7 @@ router
   .route("/services")
   .post((req, res) => serviceController.create(req, res));
 
-router.route("/services").get((req, res) => serviceController.getALL(req, res));
+router.route("/services").get((req, res) => serviceController.getAll(req, res));
 //significa que lá em params vai chegar um parametro chamado id
 router
   .route("/services/:id")

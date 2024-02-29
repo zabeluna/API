@@ -18,3 +18,17 @@ GET http://localhost:3000/api/services
 
 ###
 GET http://localhost:3000/api/services/65de489262ea5021070122a4
+
+###
+DELETE http://localhost:3000/api/services/65de489262ea5021070122a4
+//CRUD
+###
+PUT  http://localhost:3000/api/services/65dfb0f6649ec5902135f677
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZACAO",
+    "description": "Alguma descrição",
+    "price": 1400,
+    "image": "String"
+}

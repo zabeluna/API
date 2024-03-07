@@ -32,3 +32,69 @@ Content-Type: application/json
     "price": 1400,
     "image": "String"
 }
+//testando validação de orçamento
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Meu evento 2",
+    "author": "Izabelle Luna",
+    "description": "Uma festa de aniversário",
+    "budget": "10000",
+    "image": "String", 
+    //array de serviços
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 5400,
+            "image": "String" 
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 1400,
+            "image": "String" 
+        }
+    ]
+
+}
+
+###
+GET http://localhost:3000/api/parties
+
+
+###
+GET http://localhost:3000/api/parties/65e8b80c834c3f63e58979df
+
+
+###
+DELETE http://localhost:3000/api/parties/65e8b80c834c3f63e58979df
+
+###
+PUT http://localhost:3000/api/parties/65e8b80c834c3f63e58979df
+Content-Type: application/json
+{
+    "title": "Meu evento 2",
+    "author": "Izabelle Luna",
+    "description": "Uma festa de aniversário",
+    "budget": "10000",
+    "image": "String", 
+    //array de serviços
+    "services": [
+        {
+            "name": "Algum serviço 1",
+            "description": "Alguma descrição",
+            "price": 5400,
+            "image": "String" 
+        },
+        {
+            "name": "Algum serviço 2",
+            "description": "Alguma descrição",
+            "price": 1400,
+            "image": "String" 
+        }
+    ]
+
+}
